@@ -1,0 +1,188 @@
+:root {
+
+/* PRIMARY COLORS */
+
+    --clr-pale-blue:hsl(225, 100%, 94%);
+    --clr-bright-blue:hsl(245, 75%, 52%);
+
+/* NEUTRAL COLORS */
+
+    --clr-very-pale-blue:hsl(225, 100%, 98%);
+    --clr-desaturated-blue:hsl(224, 23%, 55%);
+    --clr-dark-blue:hsl(223, 47%, 23%);
+    --clr-light-blue:hsla(223, 47%, 55%, 5%);
+}
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1rem;
+}
+
+
+/* ---------- HTML ELEMENTS ---------- */
+
+
+
+body {
+
+    background-color: var(--clr-pale-blue);
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.8rem;
+    gap:1rem;
+
+    max-width: 23.50rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    background-color: var(--clr-very-pale-blue);
+}
+
+main a {
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+/* ---------- HTML CLASSES ---------- */
+
+.btn-container {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-payment {
+
+    background-color: var(--clr-bright-blue);
+    font-weight: 700;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+}
+
+.btn-payment:hover {
+
+    background-color: var(--clr-desaturated-blue);
+
+}
+
+.btn-cancel {
+
+    background-color: transparent;
+    color: var(--clr-desaturated-blue);
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+}
+
+.btn-cancel:hover {
+
+    color: var(--clr-dark-blue);
+
+}
+
+.main-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.img-hero img {
+    
+    display: block;
+    max-width: 23.50rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.text-container {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:1rem;
+}
+
+.text-container h1 {
+
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.text-container p {
+
+    color: var(--clr-desaturated-blue);
+    line-height: 1.7rem;
+}
+
+
+.plan-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    width:100%;
+    background-color: var(--clr-light-blue);
+    border-radius: 1rem;
+}
+
+.plan-align {
+
+    display: flex;
+}
+
+.plan-change {
+
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: .9rem;
+}
+
+.plan-change:hover{
+
+    color: var(--clr-desaturated-blue);
+}
+
+.plan-heading {
+
+    font-weight: 900;
+    font-size: .9rem;
+}
+
+.plan-price {
+
+    color: var(--clr-desaturated-blue);
+    font-size: 0.9rem;
+}
+
+.plan-wrapper {
+
+    padding-left: 1rem; 
+}
